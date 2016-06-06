@@ -5,37 +5,34 @@
     android:layout_height="match_parent"
     tools:context=".CardActivity"
     >
-    <ScrollView
+    <ImageView
+        android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/cat_pic"
+        android:transitionName="@string/transition_image"
+        />
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         >
-        <LinearLayout
+        <TextView
+            android:text="@string/tagline"
+            style="@style/HeadingText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-            <ImageView
-                android:id="@+id/image"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:src="@drawable/cat_pic"
-                android:transitionName="@string/transition_image"
-                />
-            <TextView
-                android:text="@string/tagline"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/padding"
-                />
-            <TextView
-                android:text="@string/details"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/padding"
-                />
-        </LinearLayout>
-    </ScrollView>
+            android:padding="@dimen/padding"
+            />
+        <TextView
+            android:text="@string/details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding"
+            />
+    </LinearLayout>
     <!--<Button-->
         <!--android:id="@+id/button"-->
         <!--android:layout_width="match_parent"-->
