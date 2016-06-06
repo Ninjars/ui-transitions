@@ -43,6 +43,7 @@
                 </FrameLayout>
                 <TextView
                     android:text="@string/tagline"
+                    style="@style/HeadingText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/padding"
