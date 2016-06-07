@@ -2,6 +2,5 @@
     <string name="app_name">UI Interaction</string>
     <string name="tagline">Purrfect tagline</string>
     <string name="details">Cats and code.\nIt makes perfect sense.</string>
-    <string name="button">I Choose You</string>
     <string name="transition_image">transition_image</string>
 </resources>
